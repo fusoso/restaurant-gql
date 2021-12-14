@@ -1,0 +1,12 @@
+type Food {
+    id: Int!
+    name: String!
+    genre: String!
+    price: Int!
+    cookingMethod: String!
+}
+
+# The Root Query for the application
+type Query {
+    listFoods(count: Int, offset: Int): [Food!]!
+}
